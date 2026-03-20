@@ -382,7 +382,7 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
 //# sourceMappingURL=jspdf.umd.min.js.map
 </script>
 <style>
-/* Fonts load from Google Fonts when online; system fonts used offline */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Azeret+Mono:wght@400;500&display=swap');
 
 :root {
   --bg:     #050f08;
@@ -412,15 +412,15 @@ nav{height:52px;background:var(--panel);border-bottom:1px solid var(--bd);displa
 .bico{width:32px;height:32px;background:var(--g);border-radius:8px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px var(--glow);flex-shrink:0}
 .bico svg{width:16px;height:16px;color:#050f08}
 .bname{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;color:var(--white)}
-.bsub{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.45rem;color:var(--mid);letter-spacing:.1em;text-transform:uppercase;margin-top:1px}
+.bsub{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.45rem;color:var(--mid);letter-spacing:.1em;text-transform:uppercase;margin-top:1px}
 .tabs{display:flex;gap:2px;height:100%;align-items:stretch}
-.tab{display:flex;align-items:center;gap:7px;padding:0 16px;font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mid);cursor:pointer;position:relative;transition:color .15s;user-select:none;border:none;background:none}
+.tab{display:flex;align-items:center;gap:7px;padding:0 16px;font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mid);cursor:pointer;position:relative;transition:color .15s;user-select:none;border:none;background:none}
 .tab::after{content:'';position:absolute;bottom:0;left:8px;right:8px;height:2px;background:var(--g);border-radius:2px 2px 0 0;transform:scaleX(0);transition:transform .2s ease}
 .tab:hover{color:var(--txt)}.tab.on{color:var(--white)}.tab.on::after{transform:scaleX(1)}
 .tdot{width:6px;height:6px;border-radius:50%;background:var(--faint);flex-shrink:0;transition:all .2s}
 .tab.on .tdot{background:var(--g);box-shadow:0 0 8px var(--g)}
 .nav-r{margin-left:auto;display:flex;align-items:center;gap:10px}
-.badge{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:6px;color:var(--mid)}
+.badge{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:6px;color:var(--mid)}
 .pip{width:6px;height:6px;border-radius:50%;background:var(--faint);transition:all .3s;flex-shrink:0}
 .pip.live{background:var(--g);box-shadow:0 0 8px var(--g);animation:pulse 2s ease-in-out infinite}
 .pip.busy{background:var(--amber);box-shadow:0 0 8px var(--amber)}
@@ -435,7 +435,7 @@ nav{height:52px;background:var(--panel);border-bottom:1px solid var(--bd);displa
 .sidebar{width:278px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--bd);display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden}
 .sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:2px}
 .sec{padding:15px;border-bottom:1px solid var(--bd)}.sec:last-child{border-bottom:none}
-.sec-lbl{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:11px;display:flex;align-items:center;gap:8px}
+.sec-lbl{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:11px;display:flex;align-items:center;gap:8px}
 .sec-lbl::after{content:'';flex:1;height:1px;background:var(--bd)}
 
 /* DROP */
@@ -445,14 +445,14 @@ nav{height:52px;background:var(--panel);border-bottom:1px solid var(--bd);displa
 .dico{width:34px;height:34px;margin:0 auto 9px;background:var(--raised);border:1px solid var(--bd2);border-radius:9px;display:flex;align-items:center;justify-content:center}
 .dico svg{width:17px;height:17px;color:var(--mid)}
 .dt{font-weight:600;font-size:.83rem;color:var(--white);margin-bottom:4px}
-.ds{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.48rem;color:var(--mid);line-height:1.7;letter-spacing:.05em}
+.ds{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.48rem;color:var(--mid);line-height:1.7;letter-spacing:.05em}
 
 /* TRANSCODE NOTICE */
 .tc-notice{display:none;margin-top:8px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:7px;padding:9px 11px}
 .tc-notice.show{display:block}
 .tc-row{display:flex;align-items:center;gap:8px}
 .tc-icon{width:14px;height:14px;flex-shrink:0;color:var(--amber)}
-.tc-text{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.5rem;color:var(--amber);line-height:1.6;letter-spacing:.03em}
+.tc-text{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.5rem;color:var(--amber);line-height:1.6;letter-spacing:.03em}
 .tc-bar-wrap{height:2px;background:rgba(245,158,11,.15);border-radius:1px;margin-top:8px;overflow:hidden}
 .tc-bar{height:100%;background:var(--amber);width:0%;border-radius:1px;transition:width .1s linear;box-shadow:0 0 8px rgba(245,158,11,.4)}
 
@@ -460,7 +460,7 @@ nav{height:52px;background:var(--panel);border-bottom:1px solid var(--bd);displa
 .finfo{display:none;margin-top:9px;background:var(--card);border:1px solid var(--bd2);border-radius:7px;padding:9px 11px}
 .finfo.show{display:block}
 .fn{font-size:.77rem;font-weight:500;color:var(--white);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:4px}
-.fm{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.48rem;color:var(--mid);line-height:1.6}
+.fm{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.48rem;color:var(--mid);line-height:1.6}
 .fm span{display:inline-block;background:var(--raised);border:1px solid var(--bd);border-radius:3px;padding:1px 5px;margin:1px 2px 1px 0}
 
 /* FPS */
@@ -468,19 +468,19 @@ nav{height:52px;background:var(--panel);border-bottom:1px solid var(--bd);displa
 .fpsmain{display:flex;align-items:center;border-bottom:1px solid var(--bd)}
 .fpsv{flex:1;background:transparent;border:none;outline:none;font-family:'Space Grotesk','DM Sans','Inter',system-ui,sans-serif;font-weight:700;font-size:2.1rem;color:var(--white);padding:7px 12px;text-align:center;min-width:0;letter-spacing:-.03em}
 .fpsv::-webkit-inner-spin-button{display:none}
-.fpsu{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.53rem;color:var(--mid);letter-spacing:.1em;padding-right:9px}
+.fpsu{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.53rem;color:var(--mid);letter-spacing:.1em;padding-right:9px}
 .fpsarr{display:flex;flex-direction:column;border-left:1px solid var(--bd)}
 .fa{flex:1;width:27px;background:transparent;border:none;border-bottom:1px solid var(--bd);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--mid);font-size:.58rem;transition:all .1s;padding:4px}
 .fa:last-child{border-bottom:none}.fa:hover{background:var(--raised);color:var(--g)}
 .fpsprs{display:flex;flex-wrap:wrap;gap:3px;padding:8px 11px 10px}
-.fpr{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.56rem;padding:3px 7px;border:1px solid var(--bd2);border-radius:4px;cursor:pointer;background:transparent;color:var(--mid);transition:all .12s}
+.fpr{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.56rem;padding:3px 7px;border:1px solid var(--bd2);border-radius:4px;cursor:pointer;background:transparent;color:var(--mid);transition:all .12s}
 .fpr:hover{border-color:var(--g);color:var(--g)}.fpr.on{background:var(--g);border-color:var(--g);color:var(--bg);font-weight:600}
 .fpssld{padding:9px 11px}
 /* FPS capped state — when requested > native video FPS */
 .fps-capped .fpsv{color:var(--mid);opacity:.45}
 .fps-capped .fpsu{opacity:.45}
 .fps-capped .fpsarr{opacity:.3;pointer-events:none}
-.fps-cap-tag{display:none;align-items:center;gap:5px;padding:5px 11px 8px;font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.48rem;color:var(--amber);letter-spacing:.06em;line-height:1.5}
+.fps-cap-tag{display:none;align-items:center;gap:5px;padding:5px 11px 8px;font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.48rem;color:var(--amber);letter-spacing:.06em;line-height:1.5}
 .fps-cap-tag.show{display:flex}
 .fps-cap-tag svg{width:11px;height:11px;flex-shrink:0;color:var(--amber)}
 input[type=range]{-webkit-appearance:none;width:100%;height:2px;background:var(--bd2);border-radius:1px;outline:none;cursor:pointer;display:block}
@@ -491,18 +491,18 @@ input[type=range]:disabled{opacity:.2;cursor:not-allowed}
 /* SIZE */
 .szgrid{display:grid;grid-template-columns:1fr auto 1fr;gap:7px;align-items:end;margin-bottom:7px}
 .sf{display:flex;flex-direction:column;gap:3px}
-.sl{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.46rem;color:var(--mid);letter-spacing:.1em;text-transform:uppercase}
+.sl{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.46rem;color:var(--mid);letter-spacing:.1em;text-transform:uppercase}
 .sv{background:var(--card);border:1px solid var(--bd2);border-radius:6px;color:var(--white);font-family:'Space Grotesk','DM Sans','Inter',system-ui,sans-serif;font-weight:600;font-size:1.02rem;padding:6px 7px;width:100%;outline:none;transition:border-color .15s;text-align:center}
 .sv:focus{border-color:var(--g)}.sv::-webkit-inner-spin-button{display:none}
 .lkbtn{width:29px;height:33px;background:var(--card);border:1px solid var(--bd2);border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--mid);transition:all .15s;flex-shrink:0}
 .lkbtn:hover{border-color:var(--g);color:var(--g)}.lkbtn.on{background:rgba(34,197,94,.1);border-color:var(--g);color:var(--g)}
-.hint{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.48rem;color:var(--mid);line-height:1.6;margin-top:5px}
+.hint{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.48rem;color:var(--mid);line-height:1.6;margin-top:5px}
 
 /* STATS */
 .stsgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
 .stcard{background:var(--card);border:1px solid var(--bd);border-radius:7px;padding:9px 11px}
 .stv{font-weight:700;font-size:1.55rem;letter-spacing:-.04em;color:var(--white);line-height:1;margin-bottom:3px}
-.stk{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.42rem;color:var(--mid);letter-spacing:.1em;text-transform:uppercase}
+.stk{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.42rem;color:var(--mid);letter-spacing:.1em;text-transform:uppercase}
 
 /* BUTTONS */
 .btn{display:flex;width:100%;align-items:center;justify-content:center;gap:7px;padding:11px 15px;border:none;border-radius:8px;cursor:pointer;font-family:'Space Grotesk','DM Sans','Inter',system-ui,sans-serif;font-weight:600;font-size:.76rem;letter-spacing:.02em;transition:all .15s}
@@ -520,31 +520,31 @@ input[type=range]:disabled{opacity:.2;cursor:not-allowed}
 #vv{background:#020a04;flex-direction:column;align-items:center;justify-content:center}
 .vemp{display:flex;flex-direction:column;align-items:center;gap:14px;opacity:.13;pointer-events:none;position:absolute}
 .vemp svg{width:60px;height:60px;color:var(--g)}
-.vemp p{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--txt)}
+.vemp p{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--txt)}
 #pvid{display:none;max-width:100%;max-height:100%;object-fit:contain}
 .hud{position:absolute;top:13px;left:13px;display:none;flex-direction:column;gap:5px;pointer-events:none;z-index:10}
 .hud.on{display:flex}
-.ht{display:inline-flex;align-items:center;gap:6px;background:rgba(2,10,4,.82);border:1px solid rgba(34,197,94,.14);backdrop-filter:blur(8px);border-radius:5px;padding:4px 9px;font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.5rem;color:rgba(224,242,229,.4);letter-spacing:.08em;white-space:nowrap}
+.ht{display:inline-flex;align-items:center;gap:6px;background:rgba(2,10,4,.82);border:1px solid rgba(34,197,94,.14);backdrop-filter:blur(8px);border-radius:5px;padding:4px 9px;font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.5rem;color:rgba(224,242,229,.4);letter-spacing:.08em;white-space:nowrap}
 .ht b{color:rgba(224,242,229,.9);font-weight:500}.ht.acc b{color:var(--g)}
 .vctrl{position:absolute;bottom:0;left:0;right:0;padding:22px 15px 11px;background:linear-gradient(transparent,rgba(2,10,4,.85));display:none;z-index:10}
 .vctrl.on{display:block}
 .ptrack{height:3px;background:rgba(255,255,255,.1);border-radius:2px;cursor:pointer;margin-bottom:7px}
 .pfill{height:100%;background:var(--g);border-radius:2px;width:0%;pointer-events:none;transition:width .08s;box-shadow:0 0 8px var(--glow)}
-.ptimes{display:flex;justify-content:space-between;font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.48rem;color:rgba(224,242,229,.3);letter-spacing:.06em}
+.ptimes{display:flex;justify-content:space-between;font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.48rem;color:rgba(224,242,229,.3);letter-spacing:.06em}
 
 /* FRAMES VIEW */
 #fv{overflow:auto;background:#040c05;flex-direction:column;align-items:center;padding:28px 22px;gap:18px}
 .femp{margin:auto;display:flex;flex-direction:column;align-items:center;gap:12px;opacity:.12;pointer-events:none}
 .femp svg{width:46px;height:46px;color:var(--g)}
-.femp p{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--txt)}
+.femp p{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--txt)}
 .fhdr{width:100%;max-width:1200px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .ftitle{font-weight:700;font-size:.88rem;color:var(--white);letter-spacing:-.01em}
-.fcnt{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.5rem;color:var(--mid);letter-spacing:.08em}
+.fcnt{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.5rem;color:var(--mid);letter-spacing:.08em}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:7px;width:100%;max-width:1200px;flex-shrink:0}
 .fthumb{aspect-ratio:16/9;background:var(--card);border:1px solid var(--bd);border-radius:6px;overflow:hidden;position:relative;transition:border-color .15s}
 .fthumb:hover{border-color:var(--bd2)}
 .fthumb img{width:100%;height:100%;object-fit:cover;display:block}
-.fnum{position:absolute;bottom:4px;right:5px;font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.43rem;color:rgba(224,242,229,.5);background:rgba(2,10,4,.72);padding:1px 4px;border-radius:2px;letter-spacing:.05em}
+.fnum{position:absolute;bottom:4px;right:5px;font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.43rem;color:rgba(224,242,229,.5);background:rgba(2,10,4,.72);padding:1px 4px;border-radius:2px;letter-spacing:.05em}
 
 /* A4 LAYOUT VIEW */
 #pv{overflow:auto;background:#383838;background-image:linear-gradient(rgba(34,197,94,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(34,197,94,.03) 1px,transparent 1px);background-size:20px 20px}
@@ -555,19 +555,19 @@ input[type=range]:disabled{opacity:.2;cursor:not-allowed}
 .a4{background:#fff;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.5),0 20px 60px rgba(0,0,0,.3)}
 .cell{position:absolute;overflow:hidden;outline:.75px solid #111;box-sizing:border-box}
 .cell img{width:100%;height:100%;object-fit:cover;display:block}
-.pgn{position:absolute;bottom:5px;right:8px;font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:7px;color:#bbb;pointer-events:none;letter-spacing:.06em}
+.pgn{position:absolute;bottom:5px;right:8px;font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:7px;color:#bbb;pointer-events:none;letter-spacing:.06em}
 
 /* PROGRESS OVERLAY */
 .overlay{position:fixed;inset:0;background:rgba(2,8,3,.96);backdrop-filter:blur(10px);z-index:9999;display:none;flex-direction:column;align-items:center;justify-content:center}
 .overlay.on{display:flex}
-.ov-ph{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--g);margin-bottom:9px}
+.ov-ph{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--g);margin-bottom:9px}
 .ov-title{font-weight:700;font-size:2.4rem;letter-spacing:-.04em;color:var(--white);margin-bottom:5px}
-.ov-sub{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.53rem;color:var(--mid);letter-spacing:.08em;margin-bottom:28px}
+.ov-sub{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.53rem;color:var(--mid);letter-spacing:.08em;margin-bottom:28px}
 .ov-track{width:420px;max-width:90vw;height:3px;background:var(--bd2);border-radius:2px;overflow:hidden;margin-bottom:14px}
 .ov-fill{height:100%;background:var(--g);width:0%;border-radius:2px;box-shadow:0 0 14px var(--glow);transition:width .06s linear}
-.ov-info{display:flex;gap:24px;font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.56rem;color:var(--mid);letter-spacing:.08em;margin-bottom:22px}
+.ov-info{display:flex;gap:24px;font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.56rem;color:var(--mid);letter-spacing:.08em;margin-bottom:22px}
 .ov-info b{color:var(--txt);font-weight:400}
-.ov-can{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);cursor:pointer;background:transparent;border:1px solid var(--bd2);padding:5px 16px;border-radius:5px;transition:all .15s}
+.ov-can{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);cursor:pointer;background:transparent;border:1px solid var(--bd2);padding:5px 16px;border-radius:5px;transition:all .15s}
 .ov-can:hover{color:var(--txt);border-color:var(--txt)}
 
 /* MODAL */
@@ -578,7 +578,7 @@ input[type=range]:disabled{opacity:.2;cursor:not-allowed}
 .mico{width:50px;height:50px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
 .mico svg{width:22px;height:22px;color:var(--g)}
 .mtitle{font-weight:700;font-size:1.15rem;letter-spacing:-.02em;color:var(--white);margin-bottom:7px}
-.mbody{font-family:'Azeret Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,monospace;font-size:.54rem;color:var(--mid);line-height:1.8;letter-spacing:.03em;margin-bottom:22px}
+.mbody{font-family:'Azeret Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;font-size:.54rem;color:var(--mid);line-height:1.8;letter-spacing:.03em;margin-bottom:22px}
 .mbody b{color:var(--txt);font-weight:400}
 .mbtns{display:flex;gap:7px}
 .mbtn{flex:1;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-family:'Space Grotesk','DM Sans','Inter',system-ui,sans-serif;font-weight:600;font-size:.7rem;letter-spacing:.01em;transition:all .15s}
@@ -804,116 +804,117 @@ dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('over');if
 fi.addEventListener('change',()=>{if(fi.files[0])handleFile(fi.files[0]);});
 
 async function handleFile(file) {
-  // Reset
-  if(srcUrl) URL.revokeObjectURL(srcUrl);
+  // ── Full reset ──
+  cancelAnimationFrame(rafId);
+  if(srcUrl){ URL.revokeObjectURL(srcUrl); srcUrl=null; }
   frames.forEach(f=>URL.revokeObjectURL(f.url)); frames=[];
-  lastPdf=null; pdfbtn.disabled=true; ready=false;
+  lastPdf=null; pdfbtn.disabled=true; ready=false; nativeFps=0;
   fgrid.innerHTML=''; fhdr.style.display='none'; femp.style.display='flex';
   Array.from(pwrap.children).forEach(c=>{if(!c.classList.contains('femp'))c.remove();});
-  exbtn.disabled=true; tcn.classList.remove('show'); finfo.classList.remove('show');
+  exbtn.disabled=true; fpsr.disabled=true;
+  tcn.classList.remove('show'); finfo.classList.remove('show');
   pvid.style.display='none'; hud.classList.remove('on'); vctrl.classList.remove('on');
-  vemp.style.display='flex';
-  cancelAnimationFrame(rafId);
+  vemp.style.display='flex'; vemp.style.opacity='1';
+  vemp.querySelector('p').textContent='Upload a video to begin';
+
+  // Fully reset both video elements to avoid stale state
+  pvid.removeAttribute('src'); pvid.load();
+  xvid.removeAttribute('src'); xvid.load();
 
   setSt('busy','Loading…');
+  go('vv');
 
   const isQuickTime = /\.(mov|qt)$/i.test(file.name) || file.type==='video/quicktime';
   const isMpeg = /\.(mpeg|mpg|m2v)$/i.test(file.name) || file.type==='video/mpeg';
   const needsTranscode = isQuickTime || isMpeg;
 
   let videoBlob = file;
-
   if(needsTranscode) {
-    // Try to transcode with FFmpeg.wasm
     const result = await transcodeWithFFmpeg(file);
-    if(result) {
-      videoBlob = result;
-    } else {
-      // FFmpeg failed or not available — try direct anyway (some .mov files work in Chrome)
-      setSt('busy','Trying direct…');
-    }
+    if(result) videoBlob = result;
+    else setSt('busy','Trying direct playback…');
   }
 
   srcUrl = URL.createObjectURL(videoBlob);
-  pvid.src = srcUrl;
-  xvid.src = srcUrl;
 
-  pvid.addEventListener('loadedmetadata', () => {
-    ready=true;
-    vW=pvid.videoWidth||1280; vH=pvid.videoHeight||720;
-    vDur=pvid.duration; asp=vW/vH;
-    fw.value=6; fh.value=(6/asp).toFixed(2);
+  // Load preview video and wait properly
+  const loaded = await new Promise(resolve => {
+    let settled = false;
+    const settle = (ok) => { if(!settled){ settled=true; resolve(ok); } };
 
-    vemp.style.display='none'; pvid.style.display='block';
-    hud.classList.add('on'); vctrl.classList.add('on');
-    hres.textContent=vW+'×'+vH; hdur.textContent=fmt(vDur);
-    hfps.textContent=getFps().toFixed(1); td.textContent=fmt(vDur);
-    finfo.classList.add('show');
-    fnEl.textContent=file.name;
-    fmEl.innerHTML='<span>'+vW+'×'+vH+'</span><span>'+fmt(vDur)+'</span><span>'+(file.size/1024/1024).toFixed(1)+' MB</span>'+(needsTranscode?'<span style="color:var(--g)">✓ converted</span>':'');
-    fpsr.disabled=false; exbtn.disabled=false;
-    setSt('live','Ready');
+    pvid.addEventListener('loadedmetadata', () => settle(true),  {once:true});
+    pvid.addEventListener('canplay',        () => settle(true),  {once:true});
+    pvid.addEventListener('error',          () => settle(false), {once:true});
+    setTimeout(() => settle(false), 8000); // 8s hard timeout
 
-    // ── Detect native FPS ──
-    // Try getting it from the media tracks API, fall back to rVFC counting, then default 30
-    nativeFps = 0;
-    try {
-      const tracks = pvid.mozGetVideoPlaybackQuality
-        ? null
-        : (pvid.videoTracks && pvid.videoTracks[0]);
-      // Most reliable: count frames over ~0.5s using rVFC
-      if(typeof pvid.requestVideoFrameCallback === 'function') {
-        let frameCount=0, startTs=null;
-        const countFrames = (now, meta) => {
-          if(startTs===null) startTs=meta.mediaTime;
-          frameCount++;
-          if(meta.mediaTime - startTs < 0.6 && frameCount < 60) {
-            pvid.requestVideoFrameCallback(countFrames);
-          } else {
-            const elapsed = meta.mediaTime - startTs;
-            if(elapsed > 0) {
-              nativeFps = Math.round(frameCount / elapsed);
-              nativeFps = Math.max(1, Math.min(120, nativeFps));
-            } else {
-              nativeFps = 30;
-            }
-            nfpslbl.textContent = nativeFps;
-            fpsr.max = Math.min(nativeFps, 30);
-            applyFpsCap(getFps());
-          }
-        };
-        pvid.requestVideoFrameCallback(countFrames);
-        pvid.play().catch(()=>{});
-      } else {
-        // Fallback: assume 30fps
-        nativeFps = 30;
-        nfpslbl.textContent = nativeFps;
-        fpsr.max = Math.min(nativeFps, 30);
-        applyFpsCap(getFps());
-        pvid.play().catch(()=>{});
-      }
-    } catch(e) {
-      nativeFps = 30;
-      nfpslbl.textContent = nativeFps;
-      pvid.play().catch(()=>{});
-    }
+    pvid.src = srcUrl;
+    pvid.load();
+  });
 
-    updateStats();
-    cancelAnimationFrame(rafId);
-    (function tick(){
-      if(vDur>0){ pfl.style.width=(pvid.currentTime/vDur*100)+'%'; tc.textContent=fmt(pvid.currentTime); }
-      rafId=requestAnimationFrame(tick);
-    })();
-  },{once:true});
-
-  pvid.addEventListener('error',e=>{
-    console.error('Video error',e,pvid.error);
-    setSt('err','Cannot play this format');
-    vemp.querySelector('p').textContent='Cannot decode video — try MP4 format';
+  if(!loaded || pvid.videoWidth === 0) {
+    setSt('err','Cannot decode this video format');
+    vemp.querySelector('p').textContent='Cannot play this format. Try converting to MP4 first.';
     vemp.style.display='flex'; vemp.style.opacity='0.6';
-  },{once:true});
+    return;
+  }
 
-  go('vv');
+  // Also set xvid (extraction) — same src, independent element
+  xvid.src = srcUrl;
+  // Don't call xvid.load() here — let extraction trigger it when needed
+
+  ready=true;
+  vW = pvid.videoWidth  || 1280;
+  vH = pvid.videoHeight || 720;
+  vDur = pvid.duration;
+  asp = vW / vH;
+
+  fw.value=6; fh.value=(6/asp).toFixed(2);
+
+  vemp.style.display='none'; pvid.style.display='block';
+  hud.classList.add('on'); vctrl.classList.add('on');
+  hres.textContent=vW+'×'+vH; hdur.textContent=fmt(vDur);
+  hfps.textContent=getFps().toFixed(1); td.textContent=fmt(vDur);
+  finfo.classList.add('show');
+  fnEl.textContent=file.name;
+  fmEl.innerHTML='<span>'+vW+'×'+vH+'</span><span>'+fmt(vDur)+'</span><span>'
+    +(file.size/1024/1024).toFixed(1)+' MB</span>'
+    +(needsTranscode?'<span style="color:var(--g)">✓ converted</span>':'');
+  fpsr.disabled=false; exbtn.disabled=false;
+  setSt('live','Ready');
+  updateStats();
+
+  // ── Scrub bar RAF ──
+  cancelAnimationFrame(rafId);
+  (function tick(){
+    if(vDur>0){ pfl.style.width=(pvid.currentTime/vDur*100)+'%'; tc.textContent=fmt(pvid.currentTime); }
+    rafId=requestAnimationFrame(tick);
+  })();
+
+  // ── Detect native FPS via requestVideoFrameCallback ──
+  nativeFps=0;
+  pvid.play().catch(()=>{});
+  if(typeof pvid.requestVideoFrameCallback==='function'){
+    let count=0, t0=null;
+    const probe=(now,meta)=>{
+      if(t0===null) t0=meta.mediaTime;
+      count++;
+      const elapsed=meta.mediaTime-t0;
+      if(elapsed<0.7&&count<90){
+        pvid.requestVideoFrameCallback(probe);
+      } else {
+        nativeFps = elapsed>0 ? Math.max(1,Math.min(120,Math.round(count/elapsed))) : 30;
+        nfpslbl.textContent=nativeFps;
+        fpsr.max=Math.min(nativeFps,30);
+        applyFpsCap(getFps());
+      }
+    };
+    pvid.requestVideoFrameCallback(probe);
+  } else {
+    nativeFps=30;
+    nfpslbl.textContent=nativeFps;
+    fpsr.max=Math.min(nativeFps,30);
+    applyFpsCap(getFps());
+  }
 }
 
 // ── SCRUB ──
@@ -1078,11 +1079,17 @@ async function doExtract(){
 
   xc.width=vW; xc.height=vH;
 
-  // Ensure xvid is loaded
-  if(xvid.readyState<1){
+  // Ensure xvid has the correct src and is fully loaded before we seek
+  if(xvid.src !== srcUrl || xvid.readyState < 2) {
+    xvid.src = srcUrl;
+    xvid.load();
     await new Promise(res=>{
-      xvid.addEventListener('loadedmetadata',res,{once:true});
-      xvid.load(); setTimeout(res,5000);
+      if(xvid.readyState >= 2){ res(); return; }
+      const onReady = ()=>{ xvid.removeEventListener('canplay',onReady); xvid.removeEventListener('error',onErr); res(); };
+      const onErr   = ()=>{ xvid.removeEventListener('canplay',onReady); xvid.removeEventListener('error',onErr); res(); };
+      xvid.addEventListener('canplay', onReady);
+      xvid.addEventListener('error',   onErr);
+      setTimeout(res, 8000);
     });
   }
   xvid.pause();
@@ -1093,11 +1100,23 @@ async function doExtract(){
     const ts=Math.min(i*interval, vDur-0.001);
     await seekTo(xvid,ts);
     if(cancelled)break;
+
+    // Draw — if the frame is blank (all black) skip-and-retry once after a short wait
+    xctx.clearRect(0,0,vW,vH);
     try{ xctx.drawImage(xvid,0,0,vW,vH); }catch(e){}
+
+    // Check if frame is truly blank (all zeros) — if so wait a tick and retry
+    const sample = xctx.getImageData(0,0,2,2).data;
+    if(sample[0]===0&&sample[1]===0&&sample[2]===0&&sample[3]===0){
+      await new Promise(r=>setTimeout(r,60));
+      try{ xctx.drawImage(xvid,0,0,vW,vH); }catch(e){}
+    }
+
     const blob=await new Promise(res=>xc.toBlob(res,'image/jpeg',.88));
     if(!blob)continue;
     const url=URL.createObjectURL(blob);
     frames.push({blob,url});
+
     const el=(performance.now()-t0)/1000, spd=((i+1)/el).toFixed(1);
     const eta=Math.max(0,(total-i-1)/parseFloat(spd)).toFixed(0);
     ovfill.style.width=((i+1)/total*100)+'%';
@@ -1124,11 +1143,22 @@ function addThumb(url,n){
 
 function seekTo(v,t){
   return new Promise(res=>{
-    if(Math.abs(v.currentTime-t)<.01){res();return;}
+    // Already close enough — no need to seek
+    if(Math.abs(v.currentTime-t)<0.02){res();return;}
+
     let done=false;
-    const timer=setTimeout(()=>{if(!done){done=true;res();}},3500);
-    v.addEventListener('seeked',()=>{if(!done){done=true;clearTimeout(timer);res();}},{once:true});
-    try{v.currentTime=t;}catch(e){clearTimeout(timer);res();}
+    const finish=()=>{ if(!done){ done=true; res(); } };
+
+    // Generous timeout: large/slow files need time per frame
+    const timer=setTimeout(finish, 5000);
+
+    v.addEventListener('seeked', ()=>{ clearTimeout(timer); finish(); }, {once:true});
+
+    // Some formats fire 'error' on seek — resolve anyway so extraction continues
+    v.addEventListener('error', ()=>{ clearTimeout(timer); finish(); }, {once:true});
+
+    try{ v.currentTime=t; }
+    catch(e){ clearTimeout(timer); finish(); }
   });
 }
 
